@@ -17,4 +17,4 @@ COPY . /app
 RUN gcc -I. main.c commands/mp3_analyzer.c -o SoundCollector -lportaudio
 
 ENTRYPOINT ["./SoundCollector"]
-CMD ["-3", "test.mp3"]
+CMD ["-f", "星の声.mp3"]
